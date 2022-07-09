@@ -2,21 +2,25 @@
 //============= SET PRELOADER FUNCTION ==============
 
 //window.onload = () => {
-    //document.querySelector(".Pre_loder").style.opacity = "0";
-    //document.querySelector(".Main_web_page").style.opacity = "1";
+//document.querySelector(".Pre_loder").style.opacity = "0";
+//document.querySelector(".Main_web_page").style.opacity = "1";
 //}
- setTimeout(function () {
- document.querySelector(".Main_web_page").style.opacity = "1";
- }, 1500)
+setTimeout(function () {
+    document.querySelector(".Main_web_page").style.opacity = "1";
+}, 1500)
 
- setTimeout(function () {
-     document.querySelector(".Pre_loder").style.opacity = "0";
- }, 1500)
+setTimeout(function () {
+    document.querySelector(".Pre_loder").style.opacity = "0";
+}, 1500)
 setTimeout(function () {
     document.querySelector(".Pre_loder").style.display = "none";
 }, 2500)
 
 //////////////////////////////////////////////////////////////////////////
+let Detail = document.querySelector(".Nav_top .Container");
+if (window.screen.height < 620) {
+    Detail.style.display = "none";
+}
 
 // =========================================================
 // ---------------START JQUERY TYPE EFFECT--------------
@@ -120,7 +124,7 @@ window.addEventListener("scroll", function () {
 
 // =============== USE HUMBARGAR ===============
 let Humbargar = document.querySelector(".Humbargar");
-let Navs = document.querySelector(".Navs");
+Navs = document.querySelector(".Navs");
 let Ul = document.querySelector(".Navs ul");
 let Spans = document.querySelectorAll(".Humbargar span");
 
