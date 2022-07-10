@@ -18,7 +18,7 @@ setTimeout(function () {
 
 //////////////////////////////////////////////////////////////////////////
 let Detail = document.querySelector(".Nav_top .Container");
-if (window.screen.height < 620) {
+if (window.screen.height < 500) {
     Detail.style.display = "none";
 }
 
