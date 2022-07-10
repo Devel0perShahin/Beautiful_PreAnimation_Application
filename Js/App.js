@@ -17,10 +17,11 @@ setTimeout(function () {
 }, 2500)
 
 //////////////////////////////////////////////////////////////////////////
-let Detail = document.querySelector(".Nav_top .Container");
+let Detail = document.querySelector(".Nav_top");
 if (window.screen.height < 500) {
     Detail.style.display = "none";
 }
+
 
 // =========================================================
 // ---------------START JQUERY TYPE EFFECT--------------
