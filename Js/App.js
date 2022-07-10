@@ -17,10 +17,8 @@ setTimeout(function () {
 }, 2500)
 
 //////////////////////////////////////////////////////////////////////////
-let Detail = document.querySelector(".Nav_top");
-if (window.screen.height < 500) {
-    Detail.style.display = "none";
-}
+
+
 
 
 // =========================================================
@@ -128,6 +126,7 @@ let Humbargar = document.querySelector(".Humbargar");
 Navs = document.querySelector(".Navs");
 let Ul = document.querySelector(".Navs ul");
 let Spans = document.querySelectorAll(".Humbargar span");
+let Nav_top = document.querySelector(".Nav_top");
 
 let Active = false;
 
@@ -137,6 +136,13 @@ Humbargar.addEventListener("click", function () {
         Spans[0].style.cssText = "transform:rotate(45deg);";
         Spans[1].style.cssText = "opacity:0;";
         Spans[2].style.cssText = "transform:rotate(-45deg);";
+        if(window.innerHeight < 500){
+            Nav_top.style.display="none";
+            Ul.style.top="10vh";
+        }else{
+            Nav_top.style.display="auto";
+            Ul.style.top="150%";
+        }
         Active = true;
     } else {
         Navs.classList.remove("Active");
